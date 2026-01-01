@@ -1,13 +1,12 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -O2
-
-TARGET = largest
-SRC = largest.c
+TARGET = factorial
+SRC = factorial.c
 
 all: $(TARGET)
 
 $(TARGET): $(SRC)
-	$(CC) $(CFLAGS) $(SRC) -o $(TARGET)
+	$(CC) $(CFLAGS) -o $(TARGET) $(SRC)
 
 clean:
 	rm -f $(TARGET)
